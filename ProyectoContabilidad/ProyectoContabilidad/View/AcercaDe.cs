@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoContabilidad.View
 {
-    public partial class CatalogoCuentas : Form
+    public partial class AcercaDe : Form
     {
-        public CatalogoCuentas()
+        public AcercaDe()
         {
+            this.TopLevel = false;
             InitializeComponent();
         }
     }

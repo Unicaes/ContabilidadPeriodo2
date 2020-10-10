@@ -10,11 +10,10 @@ using System.Windows.Forms;
 
 namespace ProyectoContabilidad.View
 {
-    public partial class Balance : Form
+    public partial class RegistroEmpresa : Form
     {
-        public Balance()
+        public RegistroEmpresa()
         {
-            this.TopLevel = false;
             InitializeComponent();
         }
     }
