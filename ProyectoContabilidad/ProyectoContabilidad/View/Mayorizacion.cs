@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoContabilidad.View
 {
-    public partial class Balance : Form
+    public partial class Mayorizacion : Form
     {
-        public Balance()
+        public Mayorizacion()
         {
             this.TopLevel = false;
             InitializeComponent();

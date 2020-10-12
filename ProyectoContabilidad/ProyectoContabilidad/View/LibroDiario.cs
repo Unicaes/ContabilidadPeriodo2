@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace ProyectoContabilidad.View
 {
-    public partial class Balance : Form
+    public partial class LibroDiario : Form
     {
-        public Balance()
+        public LibroDiario()
         {
             this.TopLevel = false;
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CatalogoDeCuentas frmCatalogoDeCuentas = new CatalogoDeCuentas();
+            frmCatalogoDeCuentas.Show();
         }
     }
 }

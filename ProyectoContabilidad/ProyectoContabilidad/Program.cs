@@ -17,7 +17,7 @@ namespace ProyectoContabilidad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CatalogoCuentas());
+            Application.Run(new MainForm());
         }
     }
 }
