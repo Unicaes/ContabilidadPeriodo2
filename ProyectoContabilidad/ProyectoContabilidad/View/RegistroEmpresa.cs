@@ -16,5 +16,11 @@ namespace ProyectoContabilidad.View
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainForm frmMain = new MainForm();
+            frmMain.Show();
+        }
     }
 }

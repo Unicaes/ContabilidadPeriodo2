@@ -23,5 +23,11 @@ namespace ProyectoContabilidad.View
             CatalogoDeCuentas frmCatalogoDeCuentas = new CatalogoDeCuentas();
             frmCatalogoDeCuentas.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RegistrodeCatalogo frmCatalogo = new RegistrodeCatalogo();
+            frmCatalogo.Show();
+        }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Catalogo.cs" />
     <Compile Include="View\AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +85,12 @@
     <Compile Include="View\Mayorizacion.Designer.cs">
       <DependentUpon>Mayorizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RegistrodeCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RegistrodeCatalogo.Designer.cs">
+      <DependentUpon>RegistrodeCatalogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\RegistroEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +125,9 @@
     <EmbeddedResource Include="View\Mayorizacion.resx">
       <DependentUpon>Mayorizacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RegistrodeCatalogo.resx">
+      <DependentUpon>RegistrodeCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\RegistroEmpresa.resx">
       <DependentUpon>RegistroEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,7 +145,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Services\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
