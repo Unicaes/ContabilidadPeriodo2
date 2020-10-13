@@ -24,7 +24,10 @@ namespace ProyectoContabilidad.View
                 asientos = Singleton.Instance.Asientos;
                 for (int i = 0; i < Singleton.Instance.Asientos.Count; i++)
                 {
-                    this.dataGridView1.Rows.Add(new Object[] { asientos[i].NumeroAsiento, asientos[i].Fecha, asientos[i].codigo, asientos[i].descripcion, asientos[i].Debe, asientos[i].Haber });
+                    this.dataGridView1.Rows.Add(new Object[] {
+                        asientos[i].codigo, asientos[i].descripcion,
+                        asientos[i].NumeroAsiento, asientos[i].Fecha.ToString("MM/dd/yyyy"),
+                        "$ " + asientos[i].Debe,  "$ "+ asientos[i].Haber });
                 }
             }
         }

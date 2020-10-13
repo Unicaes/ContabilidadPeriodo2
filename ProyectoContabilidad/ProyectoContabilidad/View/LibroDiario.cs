@@ -38,7 +38,13 @@ namespace ProyectoContabilidad.View
                 List<Asiento> asientos = Singleton.Instance.Asientos;
                 for (int i = 0; i < Singleton.Instance.Asientos.Count; i++)
                 {
-                    this.dataGridView1.Rows.Add(new Object[] { asientos[i].NumeroAsiento, asientos[i].Fecha, asientos[i].codigo, asientos[i].descripcion, asientos[i].Debe, asientos[i].Haber });
+                    this.dataGridView1.Rows.Add(new Object[] {
+                        asientos[i].NumeroAsiento,
+                        asientos[i].Fecha.ToString("MM/dd/yyyy"),
+                        asientos[i].codigo,
+                        asientos[i].descripcion,
+                        "$ " + asientos[i].Debe,
+                        "$ " + asientos[i].Haber });
                 }
             }
         }
@@ -115,7 +121,13 @@ namespace ProyectoContabilidad.View
                     this.dataGridView1.Refresh();
                     for (int i = 0; i < asientos.Count; i++)
                     {
-                        this.dataGridView1.Rows.Add(new Object[] {asientos[i].NumeroAsiento,asientos[i].Fecha,asientos[i].codigo,asientos[i].descripcion,asientos[i].Debe,asientos[i].Haber});
+                        this.dataGridView1.Rows.Add(new Object[] {
+                            asientos[i].NumeroAsiento,
+                            asientos[i].Fecha.ToString("MM/dd/yyyy"),
+                            asientos[i].codigo,
+                            asientos[i].descripcion,
+                            "$ " + asientos[i].Debe,
+                            "$ " + asientos[i].Haber});
                     }
                     Singleton.Instance.Asientos = asientos;
                 }
