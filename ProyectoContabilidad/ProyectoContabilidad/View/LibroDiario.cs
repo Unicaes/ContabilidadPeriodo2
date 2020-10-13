@@ -96,7 +96,7 @@ namespace ProyectoContabilidad.View
 
                     for (int i = 0; i < asientos.Count; i++)
                     {
-                        if (Convert.ToInt32(txtCodigo.Text) == asiento.codigo && Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
+                        if (Convert.ToInt32(txtCodigo.Text) == asientos[i].codigo && Convert.ToInt32(txtAsiento.Text) == asientos[i].NumeroAsiento)
                         {
                             MessageBox.Show("No es permitido repetir codigo de cuenta",
                             "En el mismo asiento", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
