@@ -108,7 +108,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(832, 239);
+            this.dataGridView1.Size = new System.Drawing.Size(1051, 239);
             this.dataGridView1.TabIndex = 5;
             // 
             // dataGridView2
@@ -147,7 +147,7 @@
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(832, 228);
+            this.dataGridView2.Size = new System.Drawing.Size(1051, 228);
             this.dataGridView2.TabIndex = 6;
             // 
             // cod
@@ -222,13 +222,13 @@
             // 
             // fecha
             // 
+            this.fecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.fecha.HeaderText = "Fecha";
             this.fecha.MinimumWidth = 6;
             this.fecha.Name = "fecha";
             this.fecha.ReadOnly = true;
             this.fecha.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha.Width = 59;
             // 
             // debe
             // 
@@ -254,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 647);
+            this.ClientSize = new System.Drawing.Size(1082, 647);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
