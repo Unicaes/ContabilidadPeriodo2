@@ -14,6 +14,8 @@ namespace ProyectoContabilidad.View
 {
     public partial class LibroDiario : Form
     {
+        Asiento asiento = new Asiento();
+        List<Asiento> asientos = new List<Asiento>();
         public LibroDiario()
         {
             this.TopLevel = false;
@@ -66,8 +68,7 @@ namespace ProyectoContabilidad.View
         {
             try
             {
-                Asiento asiento = new Asiento();
-                List<Asiento> asientos = new List<Asiento>();
+                
                 if (txtAsiento.Text == "" || txtCodigo.Text == "" ||txtHaber.Text == ""|| txtHaber.Text == "")
                 {
 
@@ -77,10 +78,7 @@ namespace ProyectoContabilidad.View
                 }
                 else
                 {
-                   /* if (Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
-                    {
-
-                    }*/
+                   
                     for (int i = 0; i < asientos.Count; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asiento.codigo && Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
@@ -97,12 +95,21 @@ namespace ProyectoContabilidad.View
                             asiento.Haber = Convert.ToDouble(txtHaber.Text);
                             asiento.Debe = Convert.ToDouble(txtDebe.Text);
 
+                            asientos.Add(asiento);
 
                             Singleton.Instance.Asientos.Add(asiento);
                             break;
                         }
+
                     }
-                    
+                    asiento.NumeroAsiento = Convert.ToInt32(txtAsiento.Text);
+                    asiento.Fecha = dtpFecha.Value.Date;
+                    asiento.codigo = Convert.ToInt32(txtCodigo.Text);
+                    asiento.descripcion = txtConcepto.Text;
+                    asiento.Haber = Convert.ToDouble(txtHaber.Text);
+                    asiento.Debe = Convert.ToDouble(txtDebe.Text);
+
+                    asientos.Add(asiento);
                 }
             }
             catch (Exception)
