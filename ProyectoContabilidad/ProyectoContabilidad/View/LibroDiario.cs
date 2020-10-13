@@ -68,8 +68,8 @@ namespace ProyectoContabilidad.View
         {
             try
             {
-                
-                if (txtAsiento.Text == "" || txtCodigo.Text == "" ||txtHaber.Text == ""|| txtHaber.Text == "")
+
+                if (txtAsiento.Text == "" || txtCodigo.Text == "" || txtHaber.Text == "" || txtHaber.Text == "")
                 {
 
                     MessageBox.Show("Por favor ingrese los datos",
@@ -78,7 +78,7 @@ namespace ProyectoContabilidad.View
                 }
                 else
                 {
-                   
+
                     for (int i = 0; i < asientos.Count; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asiento.codigo && Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
@@ -87,16 +87,22 @@ namespace ProyectoContabilidad.View
                             "En el mismo asiento", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             return;
                         }
-                    }                  
-                        asiento.NumeroAsiento = Convert.ToInt32(txtAsiento.Text);
-                        asiento.Fecha = dtpFecha.Value.Date;
-                        asiento.codigo = Convert.ToInt32(txtCodigo.Text);
-                        asiento.descripcion = txtConcepto.Text;
-                        asiento.Haber = Convert.ToDouble(txtHaber.Text);
-                        asiento.Debe = Convert.ToDouble(txtDebe.Text);
+                    }
+                    asiento.NumeroAsiento = Convert.ToInt32(txtAsiento.Text);
+                    asiento.Fecha = dtpFecha.Value.Date;
+                    asiento.codigo = Convert.ToInt32(txtCodigo.Text);
+                    asiento.descripcion = txtConcepto.Text;
+                    asiento.Haber = Convert.ToDouble(txtHaber.Text);
+                    asiento.Debe = Convert.ToDouble(txtDebe.Text);
 
-                        asientos.Add(asiento);
-                        Singleton.Instance.Asientos.Add(asiento);
+                    asientos.Add(asiento);
+                    this.dataGridView1.Rows.Clear();
+                    this.dataGridView1.Refresh();
+                    for (int i = 0; i < asientos.Count; i++)
+                    {
+                        this.dataGridView1.Rows.Add(new Object[] {asientos[i]});
+                    }
+                    
                 }
             }
             catch (Exception)
