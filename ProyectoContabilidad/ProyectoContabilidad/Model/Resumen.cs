@@ -8,7 +8,8 @@ namespace ProyectoContabilidad.Model
 {
     class Resumen
     {
-        public Catalogo cuenta { get; set; }
+        public int codigo { get; set; }
+        public String descripcion { get; set; }
         public Double Debe { get; set; }
         public Double Haber { get; set; }
     }

@@ -10,7 +10,8 @@ namespace ProyectoContabilidad.Model
     {
         public int NumeroAsiento { get; set; }
         public DateTime Fecha { get; set; }
-        public Catalogo Catalogo { get; set; }
+        public int codigo { get; set; }
+        public String descripcion { get; set; }
         public Double Debe { get; set; }
         public Double Haber { get; set; }
     }

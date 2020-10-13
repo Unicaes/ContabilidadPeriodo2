@@ -1,4 +1,3 @@
-C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.csprojAssemblyReference.cache
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.Properties.Resources.resources
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.Balance.resources
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.LibroDiario.resources
@@ -14,4 +13,3 @@ C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Perio
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.CatalogoDeCuentas.resources
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.AcercaDe.resources
 C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.RegistroEmpresa.resources
-C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.RegistrodeCatalogo.resources

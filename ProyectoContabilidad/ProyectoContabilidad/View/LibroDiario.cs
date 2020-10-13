@@ -26,8 +26,6 @@ namespace ProyectoContabilidad.View
 
         private void button2_Click(object sender, EventArgs e)
         {
-            RegistrodeCatalogo frmCatalogo = new RegistrodeCatalogo();
-            frmCatalogo.Show();
         }
     }
 }
