@@ -44,7 +44,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -57,18 +57,17 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(880, 531);
-            this.splitContainer1.SplitterDistance = 225;
-            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.Size = new System.Drawing.Size(1582, 654);
+            this.splitContainer1.SplitterDistance = 404;
             this.splitContainer1.TabIndex = 0;
             // 
             // btnAcerca
             // 
             this.btnAcerca.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcerca.Location = new System.Drawing.Point(9, 483);
-            this.btnAcerca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAcerca.Location = new System.Drawing.Point(12, 594);
+            this.btnAcerca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAcerca.Name = "btnAcerca";
-            this.btnAcerca.Size = new System.Drawing.Size(207, 38);
+            this.btnAcerca.Size = new System.Drawing.Size(276, 47);
             this.btnAcerca.TabIndex = 3;
             this.btnAcerca.Text = "Acerca de";
             this.btnAcerca.UseVisualStyleBackColor = true;
@@ -77,10 +76,10 @@
             // btnBalance
             // 
             this.btnBalance.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBalance.Location = new System.Drawing.Point(9, 96);
-            this.btnBalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBalance.Location = new System.Drawing.Point(12, 118);
+            this.btnBalance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Size = new System.Drawing.Size(207, 38);
+            this.btnBalance.Size = new System.Drawing.Size(276, 47);
             this.btnBalance.TabIndex = 2;
             this.btnBalance.Text = "Balance de comprobacion";
             this.btnBalance.UseVisualStyleBackColor = true;
@@ -89,10 +88,10 @@
             // btnMayorizacion
             // 
             this.btnMayorizacion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMayorizacion.Location = new System.Drawing.Point(9, 53);
-            this.btnMayorizacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMayorizacion.Location = new System.Drawing.Point(12, 65);
+            this.btnMayorizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMayorizacion.Name = "btnMayorizacion";
-            this.btnMayorizacion.Size = new System.Drawing.Size(207, 38);
+            this.btnMayorizacion.Size = new System.Drawing.Size(276, 47);
             this.btnMayorizacion.TabIndex = 1;
             this.btnMayorizacion.Text = "Mayorizacion";
             this.btnMayorizacion.UseVisualStyleBackColor = true;
@@ -101,10 +100,10 @@
             // btnLibroDiario
             // 
             this.btnLibroDiario.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibroDiario.Location = new System.Drawing.Point(9, 10);
-            this.btnLibroDiario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLibroDiario.Location = new System.Drawing.Point(12, 12);
+            this.btnLibroDiario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLibroDiario.Name = "btnLibroDiario";
-            this.btnLibroDiario.Size = new System.Drawing.Size(207, 38);
+            this.btnLibroDiario.Size = new System.Drawing.Size(276, 47);
             this.btnLibroDiario.TabIndex = 0;
             this.btnLibroDiario.Text = "Libro Diario";
             this.btnLibroDiario.UseVisualStyleBackColor = true;
@@ -112,19 +111,19 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(647, 526);
+            this.panel1.Size = new System.Drawing.Size(1159, 647);
             this.panel1.TabIndex = 0;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 531);
+            this.ClientSize = new System.Drawing.Size(1582, 654);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainFor";
             this.splitContainer1.Panel1.ResumeLayout(false);

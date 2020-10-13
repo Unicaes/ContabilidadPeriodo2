@@ -17,5 +17,10 @@ namespace ProyectoContabilidad.View
             this.TopLevel = false;
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
