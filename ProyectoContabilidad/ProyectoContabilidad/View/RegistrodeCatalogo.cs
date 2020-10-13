@@ -19,6 +19,7 @@ namespace ProyectoContabilidad.View
         private List<Catalogo> itemsCatalogo;
         private FileStream fs;
         private BinaryFormatter bf;
+        private int fila;
         public RegistrodeCatalogo()
         {
             InitializeComponent();
@@ -55,9 +56,14 @@ namespace ProyectoContabilidad.View
             oCatalogo.descripcion = this.textBox2.Text;
             itemsCatalogo.Add(oCatalogo);
             poblarTabla(itemsCatalogo);
-            
+            SerializarTabla();
+        }
+
+        private void SerializarTabla()
+        {
             bf.Serialize(fs, itemsCatalogo);
         }
+
         void poblarTabla(List<Catalogo> items)
         {
             this.dataGridView1.Rows.Clear();
@@ -67,6 +73,55 @@ namespace ProyectoContabilidad.View
                 object[] o = { items[i].codigo, items[i].descripcion };
                 this.dataGridView1.Rows.Add(o);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fila = this.dataGridView1.CurrentCell.RowIndex;
+            this.textBox1.Text = itemsCatalogo[fila].codigo.ToString();
+            this.textBox2.Text = itemsCatalogo[fila].descripcion;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Catalogo oCatalogo = new Catalogo();
+            int codigo;
+            if (int.TryParse(this.textBox1.Text, out codigo))
+            {
+                oCatalogo.codigo = codigo;
+            }
+            else
+            {
+                MessageBox.Show("Error, el codigo ingresado es invalido");
+                return;
+            }
+            oCatalogo.descripcion = this.textBox2.Text;
+            itemsCatalogo[fila] = oCatalogo;
+            poblarTabla(itemsCatalogo);
+            SerializarTabla();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Catalogo oC = itemsCatalogo[fila];
+            DialogResult resp = MessageBox.Show("Esta seguro que desea eliminar el registro con codigo:" + oC.codigo + " y desripcion: " + oC.descripcion, "no se que va aqui", MessageBoxButtons.OKCancel);
+            if (resp == DialogResult.OK)
+            {
+                itemsCatalogo.RemoveAt(fila);
+            }
+            else
+            {
+                return;
+            }
+            poblarTabla(itemsCatalogo);
+            SerializarTabla();
+        }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            fila = this.dataGridView1.CurrentCell.RowIndex;
+            this.textBox1.Text = itemsCatalogo[fila].codigo.ToString();
+            this.textBox2.Text = itemsCatalogo[fila].descripcion;
         }
     }
 }
