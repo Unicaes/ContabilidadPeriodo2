@@ -44,6 +44,8 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concept = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.debe_tot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.haber_tot = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.debe_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.haber_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,9 +56,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 18);
+            this.label1.Location = new System.Drawing.Point(11, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 29);
+            this.label1.Size = new System.Drawing.Size(147, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Movimientos";
             // 
@@ -64,9 +67,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 343);
+            this.label2.Location = new System.Drawing.Point(11, 279);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 29);
+            this.label2.Size = new System.Drawing.Size(129, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Resultados";
             // 
@@ -76,7 +80,6 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,15 +104,15 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 63);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 51);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1051, 239);
+            this.dataGridView1.Size = new System.Drawing.Size(788, 194);
             this.dataGridView1.TabIndex = 5;
             // 
             // codigo
@@ -120,11 +123,11 @@
             this.codigo.ReadOnly = true;
             this.codigo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.codigo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.codigo.Width = 138;
             // 
             // concepto
             // 
             this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.concepto.FillWeight = 92.30769F;
             this.concepto.HeaderText = "Concepto";
             this.concepto.MinimumWidth = 6;
             this.concepto.Name = "concepto";
@@ -140,11 +143,11 @@
             this.num_asiento.ReadOnly = true;
             this.num_asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.num_asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.num_asiento.Width = 146;
             // 
             // fecha
             // 
             this.fecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.fecha.FillWeight = 98.68559F;
             this.fecha.HeaderText = "Fecha";
             this.fecha.MinimumWidth = 6;
             this.fecha.Name = "fecha";
@@ -155,7 +158,6 @@
             // debe
             // 
             this.debe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.debe.FillWeight = 102.4638F;
             this.debe.HeaderText = "Debe";
             this.debe.MinimumWidth = 6;
             this.debe.Name = "debe";
@@ -166,7 +168,6 @@
             // haber
             // 
             this.haber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.haber.FillWeight = 106.5429F;
             this.haber.HeaderText = "Haber";
             this.haber.MinimumWidth = 6;
             this.haber.Name = "haber";
@@ -180,7 +181,6 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,6 +193,8 @@
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cod,
             this.concept,
+            this.debe_tot,
+            this.haber_tot,
             this.debe_result,
             this.haber_result});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -203,31 +205,30 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.Location = new System.Drawing.Point(19, 393);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 319);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1051, 228);
+            this.dataGridView2.Size = new System.Drawing.Size(788, 185);
             this.dataGridView2.TabIndex = 6;
             // 
             // cod
             // 
-            this.cod.FillWeight = 58.39695F;
             this.cod.HeaderText = "Código de Cuenta";
             this.cod.MinimumWidth = 6;
             this.cod.Name = "cod";
             this.cod.ReadOnly = true;
             this.cod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.cod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cod.Width = 120;
             // 
             // concept
             // 
             this.concept.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.concept.FillWeight = 316.8333F;
             this.concept.HeaderText = "Concepto";
             this.concept.MinimumWidth = 6;
             this.concept.Name = "concept";
@@ -235,11 +236,29 @@
             this.concept.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.concept.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // debe_tot
+            // 
+            this.debe_tot.HeaderText = "Debe Total";
+            this.debe_tot.MinimumWidth = 6;
+            this.debe_tot.Name = "debe_tot";
+            this.debe_tot.ReadOnly = true;
+            this.debe_tot.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.debe_tot.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.debe_tot.Width = 120;
+            // 
+            // haber_tot
+            // 
+            this.haber_tot.HeaderText = "Haber Total";
+            this.haber_tot.MinimumWidth = 6;
+            this.haber_tot.Name = "haber_tot";
+            this.haber_tot.ReadOnly = true;
+            this.haber_tot.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.haber_tot.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.haber_tot.Width = 120;
+            // 
             // debe_result
             // 
-            this.debe_result.FillWeight = 9.647924F;
-            this.debe_result.HeaderText = "Debe";
-            this.debe_result.MinimumWidth = 6;
+            this.debe_result.HeaderText = "Debe Resultante";
             this.debe_result.Name = "debe_result";
             this.debe_result.ReadOnly = true;
             this.debe_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -247,9 +266,7 @@
             // 
             // haber_result
             // 
-            this.haber_result.FillWeight = 15.12185F;
-            this.haber_result.HeaderText = "Haber";
-            this.haber_result.MinimumWidth = 6;
+            this.haber_result.HeaderText = "Haber Resultante";
             this.haber_result.Name = "haber_result";
             this.haber_result.ReadOnly = true;
             this.haber_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -257,15 +274,15 @@
             // 
             // Mayorizacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 647);
+            this.ClientSize = new System.Drawing.Size(812, 526);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mayorizacion";
             this.Text = "Mayorizacion";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -281,15 +298,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn concept;
-        private System.Windows.Forms.DataGridViewTextBoxColumn debe_result;
-        private System.Windows.Forms.DataGridViewTextBoxColumn haber_result;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn concepto;
         private System.Windows.Forms.DataGridViewTextBoxColumn num_asiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn debe;
         private System.Windows.Forms.DataGridViewTextBoxColumn haber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn concept;
+        private System.Windows.Forms.DataGridViewTextBoxColumn debe_tot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn haber_tot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn debe_result;
+        private System.Windows.Forms.DataGridViewTextBoxColumn haber_result;
     }
 }
