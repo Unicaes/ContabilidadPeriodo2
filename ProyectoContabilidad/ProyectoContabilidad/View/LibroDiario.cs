@@ -67,6 +67,7 @@ namespace ProyectoContabilidad.View
             try
             {
                 Asiento asiento = new Asiento();
+                List<Asiento> asientos = new List<Asiento>();
                 if (txtAsiento.Text == "" || txtCodigo.Text == "" ||txtHaber.Text == ""|| txtHaber.Text == "")
                 {
 
@@ -80,7 +81,7 @@ namespace ProyectoContabilidad.View
                     {
 
                     }*/
-                    for (int i = 0; i < asiento.NumeroAsiento; i++)
+                    for (int i = 0; i < asientos.Count; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asiento.codigo && Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
                         {
@@ -95,6 +96,7 @@ namespace ProyectoContabilidad.View
                             asiento.descripcion = txtConcepto.Text;
                             asiento.Haber = Convert.ToDouble(txtHaber.Text);
                             asiento.Debe = Convert.ToDouble(txtDebe.Text);
+
 
                             Singleton.Instance.Asientos.Add(asiento);
                             break;
