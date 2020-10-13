@@ -76,7 +76,11 @@ namespace ProyectoContabilidad.View
                 }
                 else
                 {
-                    for (int i = 0; i < 20; i++)
+                   /* if (Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
+                    {
+
+                    }*/
+                    for (int i = 0; i < asiento.NumeroAsiento; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asiento.codigo && Convert.ToInt32(txtAsiento.Text) == asiento.NumeroAsiento)
                         {
@@ -101,8 +105,8 @@ namespace ProyectoContabilidad.View
             }
             catch (Exception)
             {
-                MessageBox.Show("No es permitido repetir codigo de cuenta",
-               "En el mismo asiento", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ah ocurrido un error", "Ah ocurrido un error",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
                 throw;
             }
