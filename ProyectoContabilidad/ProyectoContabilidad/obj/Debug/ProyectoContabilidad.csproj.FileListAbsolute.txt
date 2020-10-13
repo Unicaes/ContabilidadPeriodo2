@@ -33,3 +33,19 @@ C:\Users\Me\Documents\GitHub\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoC
 C:\Users\Me\Documents\GitHub\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.exe
 C:\Users\Me\Documents\GitHub\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.pdb
 >>>>>>> 9776dd6828453214a829d7f1fdfbf5eb54fd4c27
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\bin\Debug\ProyectoContabilidad.exe.config
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\bin\Debug\ProyectoContabilidad.exe
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\bin\Debug\ProyectoContabilidad.pdb
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.csprojAssemblyReference.cache
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.Properties.Resources.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.AcercaDe.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.Balance.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.CatalogoDeCuentas.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.LibroDiario.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.MainForm.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.Mayorizacion.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.View.RegistroEmpresa.resources
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.csproj.GenerateResource.cache
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.csproj.CoreCompileInputs.cache
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.exe
+C:\Users\sklip\Documents\GitHub\Nuevo Estadistica\ContabilidadPeriodo2\ProyectoContabilidad\ProyectoContabilidad\obj\Debug\ProyectoContabilidad.pdb
