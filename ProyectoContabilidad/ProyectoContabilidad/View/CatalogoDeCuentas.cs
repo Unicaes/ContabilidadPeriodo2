@@ -1,4 +1,5 @@
 ﻿using ProyectoContabilidad.Model;
+using ProyectoContabilidad.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,13 +27,16 @@ namespace ProyectoContabilidad.View
 
         private void poblarTabla()
         {
-            this.dataGridView1.Rows.Add(new object[] { "codigo", "descripcion" });
+            this.dataGridView1.Rows.Add(new object[] { 1, "a" });
+            this.dataGridView1.Rows.Add(new object[] { 2, "b" });
         }
 
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
             var fila = this.dataGridView1.CurrentCell.RowIndex;
-            //aqui se pone el codigo pa mandarlo al otro form
+            Singleton.Instance.codigo = Convert.ToInt32(this.dataGridView1.Rows[fila].Cells[0].Value);
+            Singleton.Instance.descripcion = this.dataGridView1.Rows[fila].Cells[1].Value.ToString();
+            this.Dispose();
         }
     }
 }

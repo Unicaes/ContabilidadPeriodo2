@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoContabilidad.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,8 +25,10 @@ namespace ProyectoContabilidad.View
             frmCatalogoDeCuentas.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void LibroDiario_Shown(object sender, EventArgs e)
         {
+            this.txtCodigo.Text = Singleton.Instance.codigo.ToString();
+            this.txtConcepto.Text = Singleton.Instance.descripcion;
         }
     }
 }

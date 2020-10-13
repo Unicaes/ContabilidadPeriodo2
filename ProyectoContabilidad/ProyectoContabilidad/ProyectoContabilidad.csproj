@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Model\Asiento.cs" />
     <Compile Include="Model\Resumen.cs" />
+    <Compile Include="Services\Singleton.cs" />
     <Compile Include="View\AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,7 +138,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>

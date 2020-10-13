@@ -214,6 +214,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LibroDiario";
             this.Text = "LibroDiario";
+            this.Shown += new System.EventHandler(this.LibroDiario_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

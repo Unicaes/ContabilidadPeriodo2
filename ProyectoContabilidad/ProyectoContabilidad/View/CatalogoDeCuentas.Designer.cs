@@ -47,6 +47,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
@@ -65,6 +69,7 @@
             this.Codigo.HeaderText = "Codigo";
             this.Codigo.MinimumWidth = 6;
             this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
             this.Codigo.Width = 125;
             // 
             // Concepto
@@ -73,6 +78,7 @@
             this.Concepto.HeaderText = "Concepto";
             this.Concepto.MinimumWidth = 6;
             this.Concepto.Name = "Concepto";
+            this.Concepto.ReadOnly = true;
             // 
             // CatalogoDeCuentas
             // 
