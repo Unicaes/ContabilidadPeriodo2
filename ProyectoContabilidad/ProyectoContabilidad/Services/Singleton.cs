@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoContabilidad.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,5 +23,6 @@ namespace ProyectoContabilidad.Services
         }
         public int codigo;
         public String descripcion;
+        public Empresa Empresa { get; set; }
     }
 }

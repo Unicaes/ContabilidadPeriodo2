@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Asiento.cs" />
+    <Compile Include="Model\Empresa.cs" />
     <Compile Include="Model\Resumen.cs" />
     <Compile Include="Services\Singleton.cs" />
     <Compile Include="View\AcercaDe.cs">

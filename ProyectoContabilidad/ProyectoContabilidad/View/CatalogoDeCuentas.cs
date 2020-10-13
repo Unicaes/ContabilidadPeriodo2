@@ -17,11 +17,13 @@ namespace ProyectoContabilidad.View
 {
     public partial class CatalogoDeCuentas : Form
     {
-        public CatalogoDeCuentas()
+        LibroDiario Padre;
+        public CatalogoDeCuentas(LibroDiario oPadre)
         {
             InitializeComponent();
             this.dataGridView1.Rows.Clear();
             this.dataGridView1.Refresh();
+            Padre = oPadre;
             poblarTabla();
         }
 
@@ -227,6 +229,7 @@ namespace ProyectoContabilidad.View
             var fila = this.dataGridView1.CurrentCell.RowIndex;
             Singleton.Instance.codigo = Convert.ToInt32(this.dataGridView1.Rows[fila].Cells[0].Value);
             Singleton.Instance.descripcion = this.dataGridView1.Rows[fila].Cells[1].Value.ToString();
+            Padre.cargarDatos();
             this.Dispose();
         }
     }

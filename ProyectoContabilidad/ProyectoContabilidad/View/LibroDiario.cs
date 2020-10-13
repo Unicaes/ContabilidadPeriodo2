@@ -21,14 +21,17 @@ namespace ProyectoContabilidad.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CatalogoDeCuentas frmCatalogoDeCuentas = new CatalogoDeCuentas();
+            CatalogoDeCuentas frmCatalogoDeCuentas = new CatalogoDeCuentas(this);
             frmCatalogoDeCuentas.Show();
         }
-
-        private void LibroDiario_Shown(object sender, EventArgs e)
+        public void cargarDatos()
         {
             this.txtCodigo.Text = Singleton.Instance.codigo.ToString();
             this.txtConcepto.Text = Singleton.Instance.descripcion;
+        }
+        private void LibroDiario_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
 }

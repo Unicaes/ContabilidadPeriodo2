@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoContabilidad.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace ProyectoContabilidad.View
         public MainForm()
         {
             InitializeComponent();
+            this.Text = Singleton.Instance.Empresa.Nombre;
         }
 
         private void btnLibroDiario_Click(object sender, EventArgs e)
