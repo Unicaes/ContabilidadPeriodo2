@@ -82,6 +82,7 @@ namespace ProyectoContabilidad.View
         {
             try
             {
+                asiento = new Asiento();
 
                 if (txtAsiento.Text == "" || txtCodigo.Text == "" || txtHaber.Text == "" || txtHaber.Text == "")
                 {
