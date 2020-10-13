@@ -89,17 +89,14 @@ namespace ProyectoContabilidad.View
             try
             {
                 asiento = new Asiento();
-
-                if (txtAsiento.Text == "" || txtCodigo.Text == "" || txtHaber.Text == "" || txtHaber.Text == "")
+                double debe, haber;
+                if (String.IsNullOrWhiteSpace(txtAsiento.Text) || String.IsNullOrWhiteSpace(txtCodigo.Text) || Double.TryParse(txtDebe.Text,out debe) || Double.TryParse(txtHaber.Text,out haber))
                 {
-
                     MessageBox.Show("Por favor ingrese los datos",
                        "debidamente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
                 }
                 else
                 {
-
                     for (int i = 0; i < asientos.Count; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asientos[i].codigo && Convert.ToInt32(txtAsiento.Text) == asientos[i].NumeroAsiento)
@@ -113,9 +110,8 @@ namespace ProyectoContabilidad.View
                     asiento.Fecha = dtpFecha.Value.Date;
                     asiento.codigo = Convert.ToInt32(txtCodigo.Text);
                     asiento.descripcion = txtConcepto.Text;
-                    asiento.Haber = Convert.ToDouble(txtHaber.Text);
-                    asiento.Debe = Convert.ToDouble(txtDebe.Text);
-
+                    asiento.Haber = haber;
+                    asiento.Debe = debe;
                     asientos.Add(asiento);
                     this.dataGridView1.Rows.Clear();
                     this.dataGridView1.Refresh();

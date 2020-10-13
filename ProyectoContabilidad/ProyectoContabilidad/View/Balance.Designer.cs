@@ -31,18 +31,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblSuma1 = new System.Windows.Forms.Label();
-            this.lblSuma2 = new System.Windows.Forms.Label();
-            this.lblSuma3 = new System.Windows.Forms.Label();
-            this.lblSuma4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mov_deudor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mov_acree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saldo_deudor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saldo_acreedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSuma1 = new System.Windows.Forms.Label();
+            this.lblSuma2 = new System.Windows.Forms.Label();
+            this.lblSuma3 = new System.Windows.Forms.Label();
+            this.lblSuma4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,6 +87,72 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(824, 399);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // cod
+            // 
+            this.cod.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cod.FillWeight = 100.1218F;
+            this.cod.HeaderText = "Código de Cuenta";
+            this.cod.MinimumWidth = 6;
+            this.cod.Name = "cod";
+            this.cod.ReadOnly = true;
+            this.cod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // concepto
+            // 
+            this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.concepto.FillWeight = 100.0962F;
+            this.concepto.HeaderText = "Concepto";
+            this.concepto.MinimumWidth = 6;
+            this.concepto.Name = "concepto";
+            this.concepto.ReadOnly = true;
+            this.concepto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.concepto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mov_deudor
+            // 
+            this.mov_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mov_deudor.FillWeight = 99.34443F;
+            this.mov_deudor.HeaderText = "Movimiento Deudor";
+            this.mov_deudor.MinimumWidth = 6;
+            this.mov_deudor.Name = "mov_deudor";
+            this.mov_deudor.ReadOnly = true;
+            this.mov_deudor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.mov_deudor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mov_acree
+            // 
+            this.mov_acree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mov_acree.FillWeight = 100.179F;
+            this.mov_acree.HeaderText = "Movimiento Acreedor";
+            this.mov_acree.MinimumWidth = 6;
+            this.mov_acree.Name = "mov_acree";
+            this.mov_acree.ReadOnly = true;
+            this.mov_acree.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.mov_acree.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // saldo_deudor
+            // 
+            this.saldo_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.saldo_deudor.FillWeight = 100.1439F;
+            this.saldo_deudor.HeaderText = "Saldo Deudor";
+            this.saldo_deudor.MinimumWidth = 6;
+            this.saldo_deudor.Name = "saldo_deudor";
+            this.saldo_deudor.ReadOnly = true;
+            this.saldo_deudor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.saldo_deudor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // saldo_acreedor
+            // 
+            this.saldo_acreedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.saldo_acreedor.FillWeight = 100.1146F;
+            this.saldo_acreedor.HeaderText = "Saldo Acreedor";
+            this.saldo_acreedor.MinimumWidth = 6;
+            this.saldo_acreedor.Name = "saldo_acreedor";
+            this.saldo_acreedor.ReadOnly = true;
+            this.saldo_acreedor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.saldo_acreedor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // label1
             // 
@@ -155,66 +222,6 @@
             this.label2.Size = new System.Drawing.Size(413, 29);
             this.label2.TabIndex = 6;
             this.label2.Text = "BALANCE DE COMPROBACIÓN";
-            // 
-            // cod
-            // 
-            this.cod.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cod.HeaderText = "Código de Cuenta";
-            this.cod.MinimumWidth = 6;
-            this.cod.Name = "cod";
-            this.cod.ReadOnly = true;
-            this.cod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.cod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // concepto
-            // 
-            this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.concepto.HeaderText = "Concepto";
-            this.concepto.MinimumWidth = 6;
-            this.concepto.Name = "concepto";
-            this.concepto.ReadOnly = true;
-            this.concepto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.concepto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mov_deudor
-            // 
-            this.mov_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.mov_deudor.HeaderText = "Movimiento Deudor";
-            this.mov_deudor.MinimumWidth = 6;
-            this.mov_deudor.Name = "mov_deudor";
-            this.mov_deudor.ReadOnly = true;
-            this.mov_deudor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.mov_deudor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mov_acree
-            // 
-            this.mov_acree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.mov_acree.HeaderText = "Movimiento Acreedor";
-            this.mov_acree.MinimumWidth = 6;
-            this.mov_acree.Name = "mov_acree";
-            this.mov_acree.ReadOnly = true;
-            this.mov_acree.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.mov_acree.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // saldo_deudor
-            // 
-            this.saldo_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.saldo_deudor.HeaderText = "Saldo Deudor";
-            this.saldo_deudor.MinimumWidth = 6;
-            this.saldo_deudor.Name = "saldo_deudor";
-            this.saldo_deudor.ReadOnly = true;
-            this.saldo_deudor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.saldo_deudor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // saldo_acreedor
-            // 
-            this.saldo_acreedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.saldo_acreedor.HeaderText = "Saldo Acreedor";
-            this.saldo_acreedor.MinimumWidth = 6;
-            this.saldo_acreedor.Name = "saldo_acreedor";
-            this.saldo_acreedor.ReadOnly = true;
-            this.saldo_acreedor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.saldo_acreedor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Balance
             // 
