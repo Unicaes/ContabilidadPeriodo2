@@ -97,6 +97,7 @@
             // 
             // txtAsiento
             // 
+            this.txtAsiento.Enabled = false;
             this.txtAsiento.Location = new System.Drawing.Point(89, 360);
             this.txtAsiento.Name = "txtAsiento";
             this.txtAsiento.Size = new System.Drawing.Size(200, 22);
@@ -108,6 +109,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 22);
             this.dtpFecha.TabIndex = 8;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // label5
             // 
