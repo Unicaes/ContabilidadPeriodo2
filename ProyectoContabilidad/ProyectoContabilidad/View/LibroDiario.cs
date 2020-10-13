@@ -68,13 +68,13 @@ namespace ProyectoContabilidad.View
             var similar = from c in Singleton.Instance.Asientos
                           where c.Fecha.Equals(fecha)
                           select c;
-            if (similar.Count() >= 0)
+            try
             {
                 this.txtAsiento.Text = similar.First().NumeroAsiento.ToString();
             }
-            else
+            catch (Exception)
             {
-                this.txtAsiento.Text = Singleton.Instance.Asientos[Singleton.Instance.Asientos.Count - 1].NumeroAsiento + 1.ToString();
+                this.txtAsiento.Text = (Convert.ToInt32(Singleton.Instance.Asientos[Singleton.Instance.Asientos.Count - 1].NumeroAsiento) + 1).ToString();
             }
         }
 
