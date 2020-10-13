@@ -90,7 +90,7 @@ namespace ProyectoContabilidad.View
             {
                 asiento = new Asiento();
                 double debe, haber;
-                if (String.IsNullOrWhiteSpace(txtAsiento.Text) || String.IsNullOrWhiteSpace(txtCodigo.Text) || Double.TryParse(txtDebe.Text,out debe) || Double.TryParse(txtHaber.Text,out haber))
+                if (String.IsNullOrWhiteSpace(txtAsiento.Text) || String.IsNullOrWhiteSpace(txtCodigo.Text) || !Double.TryParse(txtDebe.Text,out debe) || !Double.TryParse(txtHaber.Text,out haber))
                 {
                     MessageBox.Show("Por favor ingrese los datos",
                        "debidamente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -111,7 +111,7 @@ namespace ProyectoContabilidad.View
                     asiento.codigo = Convert.ToInt32(txtCodigo.Text);
                     asiento.descripcion = txtConcepto.Text;
                     asiento.Haber = haber;
-                    asiento.Debe = debe;
+                    asiento.Debe = debe;    
                     asientos.Add(asiento);
                     this.dataGridView1.Rows.Clear();
                     this.dataGridView1.Refresh();
