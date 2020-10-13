@@ -91,6 +91,7 @@
             // cod
             // 
             this.cod.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cod.FillWeight = 100.1218F;
             this.cod.HeaderText = "Código de Cuenta";
             this.cod.MinimumWidth = 6;
             this.cod.Name = "cod";
@@ -101,6 +102,7 @@
             // concepto
             // 
             this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.concepto.FillWeight = 100.0962F;
             this.concepto.HeaderText = "Concepto";
             this.concepto.MinimumWidth = 6;
             this.concepto.Name = "concepto";
@@ -111,6 +113,7 @@
             // mov_deudor
             // 
             this.mov_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mov_deudor.FillWeight = 99.34443F;
             this.mov_deudor.HeaderText = "Movimiento Deudor";
             this.mov_deudor.MinimumWidth = 6;
             this.mov_deudor.Name = "mov_deudor";
@@ -121,6 +124,7 @@
             // mov_acree
             // 
             this.mov_acree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mov_acree.FillWeight = 100.179F;
             this.mov_acree.HeaderText = "Movimiento Acreedor";
             this.mov_acree.MinimumWidth = 6;
             this.mov_acree.Name = "mov_acree";
@@ -131,6 +135,7 @@
             // saldo_deudor
             // 
             this.saldo_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.saldo_deudor.FillWeight = 100.1439F;
             this.saldo_deudor.HeaderText = "Saldo Deudor";
             this.saldo_deudor.MinimumWidth = 6;
             this.saldo_deudor.Name = "saldo_deudor";
@@ -141,6 +146,7 @@
             // saldo_acreedor
             // 
             this.saldo_acreedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.saldo_acreedor.FillWeight = 100.1146F;
             this.saldo_acreedor.HeaderText = "Saldo Acreedor";
             this.saldo_acreedor.MinimumWidth = 6;
             this.saldo_acreedor.Name = "saldo_acreedor";
