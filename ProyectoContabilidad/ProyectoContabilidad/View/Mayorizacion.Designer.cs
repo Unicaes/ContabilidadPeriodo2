@@ -35,17 +35,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.concept = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.debe_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.haber_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.num_asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.debe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.haber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.concept = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.debe_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.haber_result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,12 +112,71 @@
             this.dataGridView1.Size = new System.Drawing.Size(1051, 239);
             this.dataGridView1.TabIndex = 5;
             // 
+            // codigo
+            // 
+            this.codigo.HeaderText = "Código de Cuenta";
+            this.codigo.MinimumWidth = 6;
+            this.codigo.Name = "codigo";
+            this.codigo.ReadOnly = true;
+            this.codigo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.codigo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // concepto
+            // 
+            this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.concepto.HeaderText = "Concepto";
+            this.concepto.MinimumWidth = 6;
+            this.concepto.Name = "concepto";
+            this.concepto.ReadOnly = true;
+            this.concepto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.concepto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // num_asiento
+            // 
+            this.num_asiento.HeaderText = "Número de Asiento";
+            this.num_asiento.MinimumWidth = 6;
+            this.num_asiento.Name = "num_asiento";
+            this.num_asiento.ReadOnly = true;
+            this.num_asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.num_asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // fecha
+            // 
+            this.fecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.fecha.HeaderText = "Fecha";
+            this.fecha.MinimumWidth = 6;
+            this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            this.fecha.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // debe
+            // 
+            this.debe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.debe.HeaderText = "Debe";
+            this.debe.MinimumWidth = 6;
+            this.debe.Name = "debe";
+            this.debe.ReadOnly = true;
+            this.debe.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.debe.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // haber
+            // 
+            this.haber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.haber.HeaderText = "Haber";
+            this.haber.MinimumWidth = 6;
+            this.haber.Name = "haber";
+            this.haber.ReadOnly = true;
+            this.haber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.haber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,7 +218,6 @@
             this.cod.ReadOnly = true;
             this.cod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.cod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cod.Width = 120;
             // 
             // concept
             // 
@@ -178,7 +237,6 @@
             this.debe_result.ReadOnly = true;
             this.debe_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.debe_result.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.debe_result.Width = 120;
             // 
             // haber_result
             // 
@@ -188,67 +246,6 @@
             this.haber_result.ReadOnly = true;
             this.haber_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.haber_result.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.haber_result.Width = 120;
-            // 
-            // codigo
-            // 
-            this.codigo.HeaderText = "Código de Cuenta";
-            this.codigo.MinimumWidth = 6;
-            this.codigo.Name = "codigo";
-            this.codigo.ReadOnly = true;
-            this.codigo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.codigo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.codigo.Width = 138;
-            // 
-            // concepto
-            // 
-            this.concepto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.concepto.HeaderText = "Concepto";
-            this.concepto.MinimumWidth = 6;
-            this.concepto.Name = "concepto";
-            this.concepto.ReadOnly = true;
-            this.concepto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.concepto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // num_asiento
-            // 
-            this.num_asiento.HeaderText = "Número de Asiento";
-            this.num_asiento.MinimumWidth = 6;
-            this.num_asiento.Name = "num_asiento";
-            this.num_asiento.ReadOnly = true;
-            this.num_asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.num_asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.num_asiento.Width = 146;
-            // 
-            // fecha
-            // 
-            this.fecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.fecha.HeaderText = "Fecha";
-            this.fecha.MinimumWidth = 6;
-            this.fecha.Name = "fecha";
-            this.fecha.ReadOnly = true;
-            this.fecha.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // debe
-            // 
-            this.debe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.debe.HeaderText = "Debe";
-            this.debe.MinimumWidth = 6;
-            this.debe.Name = "debe";
-            this.debe.ReadOnly = true;
-            this.debe.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.debe.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // haber
-            // 
-            this.haber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.haber.HeaderText = "Haber";
-            this.haber.MinimumWidth = 6;
-            this.haber.Name = "haber";
-            this.haber.ReadOnly = true;
-            this.haber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.haber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Mayorizacion
             // 
