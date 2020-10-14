@@ -16,7 +16,8 @@ namespace ProyectoContabilidad.View
     {
         Asiento asiento = new Asiento();
         List<Asiento> asientos = new List<Asiento>();
-        public LibroDiario()
+        MainForm Padre;
+        public LibroDiario(MainForm Padre)
         {
             this.TopLevel = false;
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace ProyectoContabilidad.View
             {
                 this.txtAsiento.Text = "1";
             }
+            this.Padre = Padre;
             cargarDatosTabla();
         }
 
@@ -147,6 +149,7 @@ namespace ProyectoContabilidad.View
                 return;
                 throw;
             }
+            Padre.habilitarBotones();
         }
     }
 }

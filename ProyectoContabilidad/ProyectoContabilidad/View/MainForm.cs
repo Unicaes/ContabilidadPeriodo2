@@ -21,11 +21,15 @@ namespace ProyectoContabilidad.View
         {
             InitializeComponent();
             this.Text = Singleton.Instance.Empresa.Nombre;
+            frmLibroDiario = new LibroDiario(this);
+            this.panel1.Controls.Clear();
+            this.panel1.Controls.Add(frmLibroDiario);
+            frmLibroDiario.Show();
         }
 
         private void btnLibroDiario_Click(object sender, EventArgs e)
         {
-            frmLibroDiario = new LibroDiario();
+            frmLibroDiario = new LibroDiario(this);
             this.panel1.Controls.Clear();
             this.panel1.Controls.Add(frmLibroDiario);
             frmLibroDiario.Show();
@@ -53,6 +57,11 @@ namespace ProyectoContabilidad.View
             this.panel1.Controls.Clear();
             this.panel1.Controls.Add(frmAcercaDe);
             frmAcercaDe.Show();
+        }
+        public void habilitarBotones()
+        {
+            this.btnMayorizacion.Enabled = false;
+            this.btnBalance.Enabled = false;
         }
     }
 }
