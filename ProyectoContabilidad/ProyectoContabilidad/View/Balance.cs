@@ -16,6 +16,12 @@ namespace ProyectoContabilidad.View
     {
         private List<Resumen> resumenes;
         double suma1, suma2, suma3, suma4;
+
+        private void Balance_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public Balance()
         {
             this.TopLevel = false;
@@ -33,10 +39,10 @@ namespace ProyectoContabilidad.View
                 suma3 += resumenes[i].DebeResultante;
                 suma4 += resumenes[i].HaberResultante;
             }
-            this.lblSuma1.Text = suma1.ToString();
-            this.lblSuma2.Text = suma2.ToString();
-            this.lblSuma3.Text = suma3.ToString();
-            this.lblSuma4.Text = suma4.ToString();
+            this.lblSuma1.Text = "$" + suma1.ToString();
+            this.lblSuma2.Text = "$" + suma2.ToString();
+            this.lblSuma3.Text = "$" + suma3.ToString();
+            this.lblSuma4.Text = "$" + suma4.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)

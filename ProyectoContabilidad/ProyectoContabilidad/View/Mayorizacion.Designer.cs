@@ -56,10 +56,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 23);
+            this.label1.Size = new System.Drawing.Size(183, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Movimientos";
             // 
@@ -67,10 +66,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 279);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 343);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 23);
+            this.label2.Size = new System.Drawing.Size(161, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Resultados";
             // 
@@ -104,8 +102,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 51);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -114,7 +112,7 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(788, 194);
+            this.dataGridView1.Size = new System.Drawing.Size(869, 239);
             this.dataGridView1.TabIndex = 5;
             // 
             // codigo
@@ -207,8 +205,8 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.Location = new System.Drawing.Point(14, 319);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Location = new System.Drawing.Point(19, 393);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -217,7 +215,7 @@
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(788, 185);
+            this.dataGridView2.Size = new System.Drawing.Size(869, 228);
             this.dataGridView2.TabIndex = 6;
             // 
             // cod
@@ -263,30 +261,33 @@
             // debe_result
             // 
             this.debe_result.HeaderText = "Debe Resultante";
+            this.debe_result.MinimumWidth = 6;
             this.debe_result.Name = "debe_result";
             this.debe_result.ReadOnly = true;
             this.debe_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.debe_result.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.debe_result.Width = 125;
             // 
             // haber_result
             // 
             this.haber_result.HeaderText = "Haber Resultante";
+            this.haber_result.MinimumWidth = 6;
             this.haber_result.Name = "haber_result";
             this.haber_result.ReadOnly = true;
             this.haber_result.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.haber_result.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.haber_result.Width = 125;
             // 
             // Mayorizacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 526);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(900, 647);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Mayorizacion";
             this.Text = "Mayorizacion";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

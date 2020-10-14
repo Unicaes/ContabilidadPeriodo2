@@ -63,7 +63,7 @@
             this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 23);
+            this.label1.Size = new System.Drawing.Size(128, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Asientos";
             // 
@@ -76,7 +76,7 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -106,7 +106,7 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(842, 209);
+            this.dataGridView1.Size = new System.Drawing.Size(879, 209);
             this.dataGridView1.TabIndex = 3;
             // 
             // num_asiento
@@ -182,7 +182,7 @@
             this.label2.Location = new System.Drawing.Point(19, 272);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 23);
+            this.label2.Size = new System.Drawing.Size(287, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Registro de asientos";
             // 
@@ -193,7 +193,7 @@
             this.label3.Location = new System.Drawing.Point(21, 315);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.Size = new System.Drawing.Size(149, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Número de Asiento:";
             // 
@@ -204,7 +204,7 @@
             this.label4.Location = new System.Drawing.Point(33, 341);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 13);
+            this.label4.Size = new System.Drawing.Size(134, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Fecha de Asiento:";
             // 
@@ -213,7 +213,7 @@
             this.txtAsiento.Location = new System.Drawing.Point(146, 312);
             this.txtAsiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtAsiento.Name = "txtAsiento";
-            this.txtAsiento.Size = new System.Drawing.Size(175, 21);
+            this.txtAsiento.Size = new System.Drawing.Size(175, 24);
             this.txtAsiento.TabIndex = 7;
             // 
             // dtpFecha
@@ -221,7 +221,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(146, 339);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(175, 21);
+            this.dtpFecha.Size = new System.Drawing.Size(175, 24);
             this.dtpFecha.TabIndex = 8;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -232,7 +232,7 @@
             this.label5.Location = new System.Drawing.Point(27, 368);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 13);
+            this.label5.Size = new System.Drawing.Size(140, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Código de Cuenta:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,7 +243,7 @@
             this.txtCodigo.Location = new System.Drawing.Point(146, 367);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(175, 21);
+            this.txtCodigo.Size = new System.Drawing.Size(175, 24);
             this.txtCodigo.TabIndex = 10;
             // 
             // txtConcepto
@@ -263,7 +263,7 @@
             this.label6.Location = new System.Drawing.Point(76, 392);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.Size = new System.Drawing.Size(81, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Concepto:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -275,7 +275,7 @@
             this.label7.Location = new System.Drawing.Point(96, 462);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 13;
             this.label7.Text = "Haber:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,7 +285,7 @@
             this.txtHaber.Location = new System.Drawing.Point(146, 459);
             this.txtHaber.Margin = new System.Windows.Forms.Padding(2);
             this.txtHaber.Name = "txtHaber";
-            this.txtHaber.Size = new System.Drawing.Size(175, 21);
+            this.txtHaber.Size = new System.Drawing.Size(175, 24);
             this.txtHaber.TabIndex = 14;
             // 
             // txtDebe
@@ -293,7 +293,7 @@
             this.txtDebe.Location = new System.Drawing.Point(146, 484);
             this.txtDebe.Margin = new System.Windows.Forms.Padding(2);
             this.txtDebe.Name = "txtDebe";
-            this.txtDebe.Size = new System.Drawing.Size(175, 21);
+            this.txtDebe.Size = new System.Drawing.Size(175, 24);
             this.txtDebe.TabIndex = 16;
             // 
             // label8
@@ -303,7 +303,7 @@
             this.label8.Location = new System.Drawing.Point(100, 487);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.Size = new System.Drawing.Size(50, 17);
             this.label8.TabIndex = 15;
             this.label8.Text = "Debe:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,9 +333,8 @@
             // 
             // LibroDiario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 647);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(900, 647);
             this.Controls.Add(this.btnLibroDiario);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtDebe);
