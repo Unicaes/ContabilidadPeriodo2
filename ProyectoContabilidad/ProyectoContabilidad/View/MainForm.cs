@@ -25,6 +25,8 @@ namespace ProyectoContabilidad.View
             this.panel1.Controls.Clear();
             this.panel1.Controls.Add(frmLibroDiario);
             frmLibroDiario.Show();
+            this.btnMayorizacion.Enabled = false;
+            this.btnBalance.Enabled = false;
         }
 
         private void btnLibroDiario_Click(object sender, EventArgs e)
@@ -60,8 +62,8 @@ namespace ProyectoContabilidad.View
         }
         public void habilitarBotones()
         {
-            this.btnMayorizacion.Enabled = false;
-            this.btnBalance.Enabled = false;
+            this.btnMayorizacion.Enabled = true;
+            this.btnBalance.Enabled = true;
         }
     }
 }
