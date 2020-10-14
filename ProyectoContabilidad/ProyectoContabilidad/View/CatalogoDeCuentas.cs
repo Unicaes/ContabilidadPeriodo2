@@ -232,5 +232,29 @@ namespace ProyectoContabilidad.View
             Padre.cargarDatos();
             this.Dispose();
         }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            String query = this.txtSearch.Text.ToUpper();
+            int index = 0;
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[1].Value.ToString().Contains(query))
+                {
+                    index = row.Index;
+                    break;
+                }
+
+                else if (row.Cells[0].Value.ToString().Contains(query))
+                {
+                    index = row.Index;
+                    break;
+                }
+            }
+            dataGridView1.Rows[index].Selected = true;
+            dataGridView1.FirstDisplayedScrollingRowIndex = index;
+            this.txtSearch.Clear();
+        }
     }
 }
