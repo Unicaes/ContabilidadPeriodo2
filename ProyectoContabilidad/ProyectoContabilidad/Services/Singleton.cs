@@ -25,5 +25,6 @@ namespace ProyectoContabilidad.Services
         public String descripcion;
         public Empresa Empresa { get; set; }
         public List<Asiento> Asientos { get; set; }
+        public List<Resumen> Resumenes { get; set; }
     }
 }

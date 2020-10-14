@@ -79,6 +79,7 @@ namespace ProyectoContabilidad.View
                     "$ " + lresumen[i].DebeResultante,
                     "$ " + lresumen[i].HaberResultante});
             }
+            Singleton.Instance.Resumenes = lresumen;
         }
     }
 }
