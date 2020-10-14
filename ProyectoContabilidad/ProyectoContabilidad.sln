@@ -5,16 +5,20 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoContabilidad", "ProyectoContabilidad\ProyectoContabilidad.csproj", "{A221F85B-8520-4A94-B7FD-2E662C780175}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{1D1E89BD-5E24-4192-8863-2F17A971561B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A221F85B-8520-4A94-B7FD-2E662C780175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A221F85B-8520-4A94-B7FD-2E662C780175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A221F85B-8520-4A94-B7FD-2E662C780175}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A221F85B-8520-4A94-B7FD-2E662C780175}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{A221F85B-8520-4A94-B7FD-2E662C780175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A221F85B-8520-4A94-B7FD-2E662C780175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1E89BD-5E24-4192-8863-2F17A971561B}.Debug|Any CPU.ActiveCfg = Debug
+		{1D1E89BD-5E24-4192-8863-2F17A971561B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

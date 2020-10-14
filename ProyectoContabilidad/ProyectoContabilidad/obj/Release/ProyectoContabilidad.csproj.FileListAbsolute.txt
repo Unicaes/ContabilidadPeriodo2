@@ -1,0 +1,16 @@
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\bin\Release\ProyectoContabilidad.exe.config
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\bin\Release\ProyectoContabilidad.exe
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\bin\Release\ProyectoContabilidad.pdb
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.csprojAssemblyReference.cache
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.Properties.Resources.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.AcercaDe.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.Balance.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.CatalogoDeCuentas.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.LibroDiario.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.MainForm.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.Mayorizacion.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.View.RegistroEmpresa.resources
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.csproj.GenerateResource.cache
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.exe
+C:\Users\bryan\Documents\Documentos\Unicaes\Ciclo VI\Tecnicas de contables\Periodo 2\Proyecto\ProyectoContabilidad\ProyectoContabilidad\obj\Release\ProyectoContabilidad.pdb
