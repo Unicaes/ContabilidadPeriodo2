@@ -97,6 +97,18 @@ namespace ProyectoContabilidad.View
                 }
                 else
                 {
+                    if (haber<0 || debe<0)
+                    {
+                        MessageBox.Show("Los valores en debe o haber no deben ser negativos",
+                       "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
+                    if (haber==0 && debe==0)
+                    {
+                        MessageBox.Show("Los valores en debe y haber no pueden ser cero al mismo tiempo",
+                      "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
                     for (int i = 0; i < asientos.Count; i++)
                     {
                         if (Convert.ToInt32(txtCodigo.Text) == asientos[i].codigo && Convert.ToInt32(txtAsiento.Text) == asientos[i].NumeroAsiento)
