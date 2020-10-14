@@ -41,7 +41,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoContabilidad.Properties.Resources.LOGUNICAES;
-            this.pictureBox1.Location = new System.Drawing.Point(355, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(285, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 150);
@@ -55,7 +55,7 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(121, 186);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(589, 29);
+            this.label1.Size = new System.Drawing.Size(474, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "UNIVERSIDAD CATÓLICA DE EL SALVADOR";
             // 
@@ -65,7 +65,7 @@
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(155, 230);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(537, 29);
+            this.label2.Size = new System.Drawing.Size(432, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "APLICACIÓN DE TÉCNICAS CONTABLES";
             // 
@@ -75,7 +75,7 @@
             this.label4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(183, 334);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(471, 29);
+            this.label4.Size = new System.Drawing.Size(374, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "BRYAN MAURICIO PALMA FLORES";
             // 
@@ -85,7 +85,7 @@
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(169, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(506, 29);
+            this.label5.Size = new System.Drawing.Size(404, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "JUAN SEBASTIAN MAGAÑA URRUTIA";
             // 
@@ -95,7 +95,7 @@
             this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(117, 422);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(596, 29);
+            this.label6.Size = new System.Drawing.Size(477, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "RENE FRANCISCO SANTAMARIA CALDERON";
             // 
@@ -105,7 +105,7 @@
             this.label7.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(321, 597);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(230, 29);
+            this.label7.Size = new System.Drawing.Size(186, 23);
             this.label7.TabIndex = 11;
             this.label7.Text = "VERSION 0.0.01";
             // 

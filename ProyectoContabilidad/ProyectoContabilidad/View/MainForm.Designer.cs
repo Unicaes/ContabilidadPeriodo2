@@ -63,7 +63,7 @@
             // 
             // btnAcerca
             // 
-            this.btnAcerca.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcerca.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcerca.Location = new System.Drawing.Point(12, 594);
             this.btnAcerca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAcerca.Name = "btnAcerca";
@@ -75,7 +75,7 @@
             // 
             // btnBalance
             // 
-            this.btnBalance.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBalance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBalance.Location = new System.Drawing.Point(12, 118);
             this.btnBalance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBalance.Name = "btnBalance";
@@ -87,7 +87,7 @@
             // 
             // btnMayorizacion
             // 
-            this.btnMayorizacion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMayorizacion.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMayorizacion.Location = new System.Drawing.Point(12, 65);
             this.btnMayorizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMayorizacion.Name = "btnMayorizacion";
@@ -99,7 +99,7 @@
             // 
             // btnLibroDiario
             // 
-            this.btnLibroDiario.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibroDiario.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLibroDiario.Location = new System.Drawing.Point(12, 12);
             this.btnLibroDiario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLibroDiario.Name = "btnLibroDiario";
@@ -124,6 +124,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainFor";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

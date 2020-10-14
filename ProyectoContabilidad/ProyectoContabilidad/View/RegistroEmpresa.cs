@@ -31,9 +31,11 @@ namespace ProyectoContabilidad.View
                 Nombre = this.txtAsiento.Text,
                 Ocupacion = this.textBox2.Text,
                 Representante = this.textBox3.Text
+
             };
             MainForm frmMain = new MainForm();
             frmMain.Show();
+
             this.Enabled = false;
             this.Visible = false;
         }
