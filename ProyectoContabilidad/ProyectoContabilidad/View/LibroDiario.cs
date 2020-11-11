@@ -14,9 +14,12 @@ namespace ProyectoContabilidad.View
 {
     public partial class LibroDiario : Form
     {
+        #region Atributos
         Asiento asiento = new Asiento();
         List<Asiento> asientos = new List<Asiento>();
-        MainForm Padre;
+        MainForm Padre; 
+        #endregion
+        #region Constructor
         public LibroDiario(MainForm Padre)
         {
             this.TopLevel = false;
@@ -29,10 +32,16 @@ namespace ProyectoContabilidad.View
             {
                 this.txtAsiento.Text = "1";
             }
+            if (Singleton.Instance.Asientos != null)
+            {
+                this.asientos = Singleton.Instance.Asientos;
+            }
             this.Padre = Padre;
             cargarDatosTabla();
         }
 
+        #endregion
+        #region Metodos
         private void cargarDatosTabla()
         {
             if (Singleton.Instance.Asientos != null && Singleton.Instance.Asientos.Count > 0)
@@ -92,20 +101,20 @@ namespace ProyectoContabilidad.View
             {
                 asiento = new Asiento();
                 double debe, haber;
-                if (String.IsNullOrWhiteSpace(txtAsiento.Text) || String.IsNullOrWhiteSpace(txtCodigo.Text) || !Double.TryParse(txtDebe.Text,out debe) || !Double.TryParse(txtHaber.Text,out haber))
+                if (String.IsNullOrWhiteSpace(txtAsiento.Text) || String.IsNullOrWhiteSpace(txtCodigo.Text) || !Double.TryParse(txtDebe.Text, out debe) || !Double.TryParse(txtHaber.Text, out haber))
                 {
                     MessageBox.Show("Por favor ingrese los datos",
                        "debidamente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    if (haber<0 || debe<0)
+                    if (haber < 0 || debe < 0)
                     {
                         MessageBox.Show("Los valores en debe o haber no deben ser negativos",
                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         return;
                     }
-                    if (haber==0 && debe==0)
+                    if (haber == 0 && debe == 0)
                     {
                         MessageBox.Show("Los valores en debe y haber no pueden ser cero al mismo tiempo",
                       "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -125,7 +134,7 @@ namespace ProyectoContabilidad.View
                     asiento.codigo = Convert.ToInt32(txtCodigo.Text);
                     asiento.descripcion = txtConcepto.Text;
                     asiento.Haber = haber;
-                    asiento.Debe = debe;    
+                    asiento.Debe = debe;
                     asientos.Add(asiento);
                     this.dataGridView1.Rows.Clear();
                     this.dataGridView1.Refresh();
@@ -150,6 +159,7 @@ namespace ProyectoContabilidad.View
                 throw;
             }
             Padre.habilitarBotones();
-        }
+        } 
+        #endregion
     }
 }
